@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.Authorization;
 namespace Ispit.Todo.Controllers
 {
 
-    //[Authorize(Roles ="User")]
+    [Authorize]
 
     public class TaskController : Controller
     {

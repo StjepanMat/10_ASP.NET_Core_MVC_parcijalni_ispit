@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace Ispit.Todo.Controllers
 {
-    //[Authorize(Roles ="User")]
+    [Authorize]
     public class TodoListController : Controller
     {
         private readonly ApplicationDbContext _context;
