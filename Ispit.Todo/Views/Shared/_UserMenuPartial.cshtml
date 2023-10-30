@@ -1,0 +1,20 @@
+﻿
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@using Microsoft.AspNetCore.Identity
+@using Ispit.Todo.Data
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+@if (SignInManager.IsSignedIn(User))
+{
+    
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="User" asp-controller="TodoList" asp-action="Index">Todo Lists</a>
+    </li>
+    <li class ="nav-item">
+        <a class="nav-link text-dark" asp-area="User" asp-controller="Task" asp-action="Index">Tasks</a>
+    </li>
+}
