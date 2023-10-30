@@ -7,9 +7,13 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Ispit.Todo.Data;
 using Ispit.Todo.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Ispit.Todo.Controllers
 {
+
+    //[Authorize(Roles ="User")]
+
     public class TaskController : Controller
     {
         private readonly ApplicationDbContext _context;
